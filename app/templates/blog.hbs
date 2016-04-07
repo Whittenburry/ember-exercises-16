@@ -1,1 +1,8 @@
-{{outlet}}
+<!-- Markup Blog Title and Content-->
+
+<div class="content-container">
+  {{#each model as |blog|}}
+    <h1>{{blog.title}}</h1>
+    <p>{{blog.content}}</p>
+  {{/each}}
+</div>
