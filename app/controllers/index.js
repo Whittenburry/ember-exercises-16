@@ -8,7 +8,7 @@ export default Ember.Controller.extend({
       address: this.address,
       phone: this.phone,
     };
-  const url = `https://tiny-tn.herokuapp.com/collections/jw-people`
+  const url = `https://tiny-tn.herokuapp.com/collections/jw-people`;
 
   fetch(url, {
     method: `POST`,

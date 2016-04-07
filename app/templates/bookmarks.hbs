@@ -1,0 +1,23 @@
+<!-- create markup for the bookmarks-->
+
+<form class="bookmarks-form" {{action addBookmark on="submit"}}>
+
+  <p>
+    <label>Nickname</label>
+    {{input type="text" value=name}}
+  </p>
+
+  <p>
+    <label>URL</label>
+    {{input type="text" value=nameUrl}}
+  </p>
+
+  <button>Submit</button>
+
+</form>
+
+{{#each model as |bookmark|}}
+<p>
+  <a href="{{bookmark.nameUrl}}" target="_blank">{{bookmark.name}}</a>
+</p>
+{{/each}}
